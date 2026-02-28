@@ -1,0 +1,162 @@
+.compare-page {
+    min-height: 100vh;
+    padding-bottom: 4rem;
+}
+
+.compare-picker {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.picker-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    flex: 1;
+    min-width: 200px;
+}
+
+.picker-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.vs-badge {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #10b981;
+    padding: 0 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.compare-btn {
+    white-space: nowrap;
+    height: 42px;
+    align-self: flex-end;
+}
+
+.compare-error {
+    padding: 1rem;
+    background: rgba(239, 68, 68, 0.08);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    border-radius: 10px;
+    color: #f87171;
+    margin-bottom: 1.5rem;
+}
+
+.compare-result {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.winner-banner {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.08), rgba(16, 185, 129, 0.06));
+    border-color: rgba(245, 158, 11, 0.2);
+}
+
+.winner-label {
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+
+.winner-name {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #fbbf24;
+}
+
+.compare-headers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.compare-head {}
+
+.compare-head-name {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.compare-head-meta {
+    font-size: 0.8rem;
+    color: #64748b;
+}
+
+.dual-bars-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.dual-bar-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.dual-val {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    width: 50px;
+    text-align: center;
+    color: #475569;
+    flex-shrink: 0;
+}
+
+.dual-val.dual-winner {
+    color: #f1f5f9;
+}
+
+.dual-bar-center {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.dual-label {
+    font-size: 0.72rem;
+    text-align: center;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.dual-track-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+}
+
+.dual-track {
+    height: 7px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.left-track {
+    direction: rtl;
+}
+
+.dual-fill {
+    height: 100%;
+    border-radius: 999px;
+    transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}

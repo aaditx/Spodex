@@ -1,0 +1,201 @@
+.lb-page {
+    min-height: 100vh;
+}
+
+/* Tabs */
+.lb-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.lb-tab-btn {
+    padding: 0.5rem 1.1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.03);
+    color: #64748b;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: 0.2s;
+    white-space: nowrap;
+}
+
+.lb-tab-btn:hover {
+    color: #f1f5f9;
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.lb-tab-btn.active {
+    background: rgba(16, 185, 129, 0.12);
+    color: #34d399;
+    border-color: rgba(16, 185, 129, 0.3);
+}
+
+/* Podium */
+.podium {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.podium-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    flex: 1;
+    max-width: 180px;
+}
+
+.podium-player {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.podium-medal {
+    font-size: 1.5rem;
+}
+
+.podium-name {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #f1f5f9;
+    margin-top: 0.25rem;
+}
+
+.podium-country {
+    font-size: 0.72rem;
+    color: #64748b;
+    margin-top: 2px;
+}
+
+.podium-value {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #10b981;
+    margin-top: 4px;
+}
+
+.podium-unit {
+    font-size: 0.65rem;
+    color: #475569;
+}
+
+.podium-block {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: none;
+}
+
+/* List */
+.lb-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.lb-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.875rem 1rem;
+    transition: 0.2s;
+}
+
+.lb-top3 {
+    background: rgba(16, 185, 129, 0.04);
+    border-color: rgba(16, 185, 129, 0.1);
+}
+
+.lb-rank {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #475569;
+    width: 30px;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.lb-player-info {
+    min-width: 0;
+    width: 200px;
+    flex-shrink: 0;
+}
+
+.lb-player-name {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.lb-player-meta {
+    font-size: 0.72rem;
+    color: #64748b;
+    margin-top: 1px;
+}
+
+.lb-bar-col {
+    flex: 1;
+}
+
+.lb-bar-track {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.lb-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #10b981, #34d399);
+    border-radius: 999px;
+    transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lb-value {
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.lb-val-num {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #f1f5f9;
+}
+
+.lb-val-unit {
+    font-size: 0.65rem;
+    color: #64748b;
+    display: block;
+}
+
+@media (max-width: 640px) {
+    .podium {
+        display: none;
+    }
+
+    .lb-player-info {
+        width: 140px;
+    }
+}

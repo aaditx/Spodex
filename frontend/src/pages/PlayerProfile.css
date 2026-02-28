@@ -1,0 +1,115 @@
+.profile-page {
+    min-height: 100vh;
+}
+
+.profile-hero {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.profile-avatar {
+    font-size: 3rem;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+.profile-name {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    font-weight: 800;
+}
+
+.profile-country {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+.profile-body {
+    padding-bottom: 4rem;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.profile-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.profile-section-label {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.75rem;
+    margin-top: 0.25rem;
+}
+
+.profile-chips {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 0.5rem;
+}
+
+.profile-stats-card {}
+
+.insights-section {}
+
+.insights-label {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.5rem;
+}
+
+.insights-pros {
+    color: #34d399;
+}
+
+.insights-cons {
+    color: #f87171;
+}
+
+.insight-item {
+    padding: 0.6rem 0.875rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: 0.4rem;
+}
+
+.insight-pro {
+    background: rgba(16, 185, 129, 0.08);
+    border: 1px solid rgba(16, 185, 129, 0.15);
+    color: #d1fae5;
+}
+
+.insight-con {
+    background: rgba(239, 68, 68, 0.06);
+    border: 1px solid rgba(239, 68, 68, 0.15);
+    color: #fecaca;
+}
+
+@media (max-width: 900px) {
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+}

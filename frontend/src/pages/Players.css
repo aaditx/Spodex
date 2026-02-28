@@ -1,0 +1,29 @@
+.players-page {
+    min-height: 100vh;
+    padding-bottom: 4rem;
+}
+
+.filters-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    padding: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.filters-bar .input {
+    max-width: 320px;
+}
+
+.country-select {
+    max-width: 200px;
+}
+
+@media (max-width: 640px) {
+
+    .filters-bar .input,
+    .country-select {
+        max-width: 100%;
+    }
+}
